@@ -1,7 +1,9 @@
-FROM node:10
-WORKDIR /app
-COPY package.json /app
+FROM node:10-alpine
+WORKDIR /usr/src/app
+
+COPY . .
 RUN npm install
-COPY . /app
-CMD node index.js
-EXPOSE 8081
+
+EXPOSE 3000
+
+CMD ["npm", "run", "start:prod"]
