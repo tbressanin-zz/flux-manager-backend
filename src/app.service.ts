@@ -7,6 +7,6 @@ export class AppService {
   }
 
   getListOfSomething(): string[] {
-    return ['Hello', `I'm`, 'a list!'];
+    return ['Hello', `I'm`, 'a list!', 'again!'];
   }
 }
